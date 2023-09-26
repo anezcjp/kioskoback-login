@@ -26,8 +26,6 @@ db.connect((err) => {
   console.log("Connected to MySQL");
 });
 
-const users = [];
-
 app.post("/register", (req, res) => {
   const { username, email, password } = req.body;
 
